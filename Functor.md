@@ -6,12 +6,12 @@ Source: [scalaz.Functor](https://github.com/scalaz/scalaz/blob/series/7.2.x/core
 
 Apply a function to the values in some context, preserving the context.
 
-## Declaration
+Examples: any monad, including `\/`, `Task`, `Option`, `List` (and other collections). Also [TODO: good non-monad examples.]
+
+## Operations
 
 ```scala
-trait Functor[F[_]] {
-  def map[A, B](fa: F[A])(f: A => B): F[B]
-}
+def map[A, B](fa: F[A])(f: A => B): F[B]
 ```
 
 ## Derived:
@@ -27,5 +27,5 @@ def fproduct[A, B](fa: F[A])(f: A => B): F[(A, B)]
 
 ```scala
 ∘ = map
->! = as = map(_ => b)
+>| = as = map(_ => b)
 ```

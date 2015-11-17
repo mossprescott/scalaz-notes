@@ -1,10 +1,12 @@
 # Applicative
 
-Typeclassopedia: [Functor](https://wiki.haskell.org/Typeclassopedia#Applicative)
+Extends Functor.
+
+Typeclassopedia: [Applicative](https://wiki.haskell.org/Typeclassopedia#Applicative)
 
 Source: [scalaz.Applicative](https://github.com/scalaz/scalaz/blob/series/7.2.x/core/src/main/scala/scalaz/Applicative.scala)
 
-More powerful than [Functor](Functor.md) which it extends, but less powerful than [Monad](Monad.md).
+More powerful than [Functor](Functor.md), because it allows computations to be placed in the context, but less powerful than [Monad](Monad.md), which allows computations which are not in the context to inject values.
 
 Encapsulates "effectful" computations, by allowing a function in a context to be applied to a value in the same context. Also provides a way to lift arbitrary values into the context (and that's the only way to get values in).
 

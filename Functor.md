@@ -6,6 +6,8 @@ Source: [scalaz.Functor](https://github.com/scalaz/scalaz/blob/series/7.2.x/core
 
 Apply a function to the values in some context, preserving the context.
 
+Nomenclature: the name was borrowed from linguistics (according to wikipedia).
+
 Examples: any monad, including `\/`, `Task`, `Option`, `List` (and other collections). Also [TODO: good non-monad examples.]
 
 ## Operations
